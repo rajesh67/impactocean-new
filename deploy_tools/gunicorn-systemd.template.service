@@ -4,14 +4,14 @@ Description=Gunicorn server for DOMAIN
 [Service]
 Restart=on-failure
 User=elspeth
-WorkingDirectory=/home/elspeth/sites/DOMAIN
+WorkingDirectory=/home/root/sites/DOMAIN
 
 Environment=DJANGO_DEBUG_FALSE=y
-Environment=DJANGO_SECRET_KEY="1*b84qe7z%4v)(_ji01k^_xx2tkhs062zpsza9gpzl3rxdfhfv"
+Environment=DJANGO_SECRET_KEY="m-a)%cx^w6!%r9%on688*=*hu$&4%30v)s7s221*f)vvz1a-xi"
 Environment=SITENAME=DOMAIN
-Environment=EMAIL_PASSWORD=SEKRIT
+Environment=EMAIL_PASSWORD='salika@11cs30025'
 
-ExecStart=/home/elspeth/sites/DOMAIN/virtualenv/bin/gunicorn \
+ExecStart=/home/root/sites/DOMAIN/virtualenv/bin/gunicorn \
     --bind unix:/tmp/DOMAIN.socket \
     --access-logfile access.log \
     --error-logfile error.log \
