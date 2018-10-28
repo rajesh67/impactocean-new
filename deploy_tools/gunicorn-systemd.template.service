@@ -15,7 +15,7 @@ ExecStart=/home/root/sites/DOMAIN/virtualenv/bin/gunicorn \
     --bind unix:/tmp/DOMAIN.socket \
     --access-logfile access.log \
     --error-logfile error.log \
-    superlists.wsgi:application
+    impactocean.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
